@@ -225,14 +225,7 @@ export default function NEETRankCalculator() {
     }
   };
 
-  const pulse = {
-    scale: [1, 1.02, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      repeatType: "reverse"
-    }
-  };
+  
   
   return (
     <motion.div 
