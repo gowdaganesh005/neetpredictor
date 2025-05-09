@@ -464,47 +464,8 @@ export default function NEETRankCalculator() {
               </p>
             </motion.div>
             
-            <motion.div 
-              className="flex space-x-6"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            >
-              <motion.div 
-                className={`h-10 w-10 ${darkMode ? 'bg-gray-700/70' : 'bg-gray-200/70'} rounded-full flex items-center justify-center transition-colors duration-500`}
-                whileHover={{ scale: 1.1, backgroundColor: darkMode ? '#6D28D9' : '#4F46E5' }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 ${themeClasses.muted}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </motion.div>
-              <motion.div 
-                className={`h-10 w-10 ${darkMode ? 'bg-gray-700/70' : 'bg-gray-200/70'} rounded-full flex items-center justify-center transition-colors duration-500`}
-                whileHover={{ scale: 1.1, backgroundColor: darkMode ? '#6D28D9' : '#4F46E5' }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 ${themeClasses.muted}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </motion.div>
-              <motion.div 
-                className={`h-10 w-10 ${darkMode ? 'bg-gray-700/70' : 'bg-gray-200/70'} rounded-full flex items-center justify-center transition-colors duration-500`}
-                whileHover={{ scale: 1.1, backgroundColor: darkMode ? '#6D28D9' : '#4F46E5' }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className={`h-5 w-5 ${themeClasses.muted}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </motion.div>
-            </motion.div>
-          </div>
-          
-          <motion.div 
-            className={`mt-6 pt-6 border-t ${themeClasses.border} text-sm ${themeClasses.muted} text-center font-light tracking-wide transition-colors duration-500`}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-          >
-            © {new Date().getFullYear()} NEET Predictor. All rights reserved.
-          </motion.div>
+           
+        </div>
         </div>
       </motion.footer>
     </motion.div>
