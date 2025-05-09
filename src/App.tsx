@@ -159,8 +159,8 @@ export default function NEETRankCalculator() {
   // Dynamic classes based on theme
   const themeClasses = {
     background: darkMode 
-      ? 'bg-gradient-to-br from-gray-900 via-purple-900/20 to-gray-900' 
-      : 'bg-gradient-to-br from-indigo-50 via-blue-50/50 to-sky-50',
+      ? 'bg-gradient-to-br from-violet-900 via-purple-400 to-gray-900' 
+      : 'bg-gradient-to-br from-indigo-500 via-blue-450 to-sky-200',
     card: darkMode 
       ? 'bg-gray-800/80 backdrop-blur-sm border-purple-900/30' 
       : 'bg-white/90 backdrop-blur-sm border-indigo-100/50',
