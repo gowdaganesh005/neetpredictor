@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Rank calculation logic based on Allen data
-const fetchRank = (marksInput:number) => {
+const fetchRank = (marksInput:number | string) => {
   const marks = Number(marksInput);
   if (marks < 0 || marks > 720) {
     return "Invalid Marks";
@@ -123,7 +123,7 @@ const fetchRank = (marksInput:number) => {
 
 export default function NEETRankCalculator() {
   const [marks, setMarks] = useState('');
-  const [rank, setRank] = useState<number | null>(null);
+  const [rank, setRank] = useState<number | null | string>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [darkMode, setDarkMode] = useState(true); // Default to dark mode
@@ -151,8 +151,7 @@ export default function NEETRankCalculator() {
     
     // Simulating API call
     setTimeout(() => {
-      
-      setRank(fetchRank());
+      setRank(fetchRank(numMarks));
       setLoading(false);
     }, 800);
   };
@@ -382,7 +381,7 @@ export default function NEETRankCalculator() {
               >
                 <motion.div 
                   className={`p-6 ${themeClasses.resultBox} rounded-lg border shadow-md transition-colors duration-500`}
-                  animate={pulse}
+                  
                 >
                   <motion.h3 
                     className={`font-light text-xl ${themeClasses.accent} mb-3 text-center`}
